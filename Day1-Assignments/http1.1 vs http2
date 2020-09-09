@@ -1,0 +1,17 @@
+In 2015, Internet Engineering Task Force (IETF) release HTTP/2, the second major version of the most useful internet protocol, HTTP. It was derived from the earlier experimental SPDY protocol.
+Main goals of developing HTTP/2 was:
+Protocol negotiation mechanism — protocol electing, eg. HTTP/1.1, HTTP/2 or other.
+High-level compatibility with HTTP/1.1 — methods, status codes, URIs and header fields.
+
+Page load speed improvements trough:
+-Compression of request headers
+-Binary protocol
+-HTTP/2 Server Push
+-Request multiplexing over a single TCP connection
+-Request pipelining
+-HOL blocking (Head-of-line) — Package blocking
+-Request multiplexing
+
+
+HTTP/2 can send multiple requests for data in parallel over a single TCP connection. This is the most advanced feature of the HTTP/2 protocol because it allows you to download web files asynchronously from one server. Most modern browsers limit TCP connections to one server.
+This reduces additional round trip time (RTT), making your website load faster without any optimization, and makes domain sharding unnecessary.
